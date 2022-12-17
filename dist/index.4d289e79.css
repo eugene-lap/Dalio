@@ -264,9 +264,8 @@ p {
   line-height: 2.5rem;
 }
 
-* a {
+a {
   cursor: pointer;
-  text-decoration: none;
 }
 
 body {
@@ -290,12 +289,6 @@ body {
   line-height: 22px;
   display: flex;
   position: relative;
-}
-
-@media screen and (max-width: 1000px) {
-  .main-button {
-    margin-top: 24px;
-  }
 }
 
 .section-header {
@@ -357,7 +350,7 @@ body {
 .bagraund__grid {
   width: 210px;
   height: 183px;
-  background: url("grid-ornament.7baa1463.png");
+  background: url("grid-ornament.ce54ba2d.e5c352b0.png");
   position: absolute;
   top: 0;
   left: 0;
@@ -367,7 +360,7 @@ body {
   .bagraund__grid {
     width: 490px;
     height: 428px;
-    background: url("grid-ornament-decst.2b7b5b0f.png");
+    background: url("grid-ornament-decst.1d05994f.6d059330.png");
     top: 0;
   }
 }
@@ -876,6 +869,10 @@ body {
   }
 }
 
+.preview-content__button {
+  margin-top: 24px;
+}
+
 @media screen and (min-width: 1129px) and (max-width: 1290px) {
   .preview-content__button {
     margin-left: -55px;
@@ -1217,7 +1214,7 @@ body {
 
 @media screen and (min-width: 1000px) {
   .wedo {
-    background: linear-gradient(to left, #353f5b 60%, #ffc93e 40%);
+    background: linear-gradient(270deg, #353f5b 60%, #ffc93e 40%);
   }
 }
 
@@ -1524,7 +1521,7 @@ body {
     width: 20px;
     height: 20px;
     display: inline-block;
-    background-image: url("bi_arrow-up-right.b6590830.svg") !important;
+    background-image: url("bi_arrow-up-right.8c57201a.ab6bc7c0.svg") !important;
   }
 
   .arrows--none {
@@ -1746,7 +1743,7 @@ body {
   .reviews-content-punctuation {
     width: 62px;
     height: 47.21px;
-    background-image: url("reviews-content-punctuation.9e5893f7.svg");
+    background-image: url("reviews-content-punctuation.f6a1dec7.fcdc2dc2.svg");
     margin-left: 0;
     display: inline-block;
   }
@@ -2103,7 +2100,7 @@ body {
   height: 16px;
   width: 16px;
   cursor: pointer;
-  background: url("submit-form.0ec40d7c.svg") no-repeat;
+  background: url("submit-form.6512d095.dc235fdd.svg") no-repeat;
   border: none;
   position: absolute;
   bottom: 37%;
@@ -2117,7 +2114,7 @@ body {
   }
 }
 
-@media screen and (min-width: 0) and (max-width: 412px) {
+@media screen and (min-width: 0) and (max-width: 417px) {
   .main-footer-form__input-email {
     bottom: 29%;
     right: 14.6927%;
@@ -2159,4 +2156,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=index.4269e094.css.map */
+/*# sourceMappingURL=index.4d289e79.css.map */

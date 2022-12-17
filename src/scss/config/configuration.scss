@@ -26,8 +26,9 @@ h5{
 p{
     @include font("Inter", 400, 1.33333333333rem, 2.5rem, $main-white);
 }
-a{
+*a{
     cursor: pointer;
+    text-decoration: none;
 }
 body{
     background: $main-blue;
