@@ -1,0 +1,125 @@
+.wedo {
+    margin-top: 60px;
+    position: relative;
+    @media screen and (min-width: 1000px) {
+        background: linear-gradient(to left, #353F5B 60%, $main-yellow 40%);
+    }
+}
+
+.wedo-container-grid{
+    display: grid;
+    @media screen and (min-width: 1000px) {
+        grid-template-columns: 40% 60%;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+}
+
+.wedo-section-yellow {
+        position: relative;
+        order: 1;
+        background-color: $main-yellow;
+        padding-bottom: 30.569948186%;
+        @media screen and (min-width: 1000px) {
+            order: 0;
+            padding-bottom: 0;
+        }
+
+        @media screen and (min-width: 600px) and (max-width: 1000px) {
+            padding-bottom: 15%;
+        }
+
+		&__img {
+            width: 100vw;
+            margin-top: -15.33333333%;
+            position: relative;
+            z-index: 2;
+
+            @media screen and (min-width: 1200px) {
+                margin-top: 3%;
+                margin-left: 20%;
+            }
+
+            @media screen and (min-width:1150px) and (max-width: 1200px) {
+                margin-top: 15%;
+                margin-left: 15%;
+            }
+
+            @media screen and (min-width:1000px) and (max-width: 1150px) {
+                margin-top: 25%;
+                margin-left: 12%;
+            }
+            
+            @media screen and (min-width: 600px) and (max-width: 1000px) {
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: -10%;
+            }
+		}
+}
+.wedo-section-grey {
+    padding-bottom: 99px;
+    margin: 0 auto;
+}
+.wedo-section-grey-blok {
+    @media screen and (min-width: 1000px) {
+        margin: 0 auto;
+        margin-top: 10%;
+        max-width: 535px;
+    }
+}
+
+.wedo-section-grey-blok-content {
+            margin-top: 24px;
+
+		&__subtitle {
+            margin-left: 48px;
+            margin-top: 16px;
+		}
+}
+.wedo-section-grey-blok-content-flex {
+            width: 100%;
+            display: flex;
+
+		&__title {
+           margin-left: 20px;
+		}
+}
+
+.wedo-ornament__topright{
+    position: absolute;
+    right: 0;
+    top: -123.6px;
+}
+
+.wedo-section-yellow-ornament__topright{
+    position: absolute;
+    right: 0px;
+    top: -9.067357512%;
+
+    @media screen and (min-width: 1000px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 600px) and (max-width: 1000px) {
+        display: none;
+    }
+}
+
+.wedo-section-yellow-ornament__bootonleft{
+    position: absolute;
+    z-index: 3;
+    bottom: 22.538860103%;
+    left: 6%;
+
+    @media screen and (min-width: 1000px) {
+        display: none;
+    }
+    
+    @media screen and (min-width: 600px) and (max-width: 1000px) {
+        left: 25%;
+        bottom: 0%;
+    }
+    
+}

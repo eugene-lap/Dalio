@@ -1,0 +1,396 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap";
+html {
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.15;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  margin: .67em 0;
+  font-size: 2em;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: #0000;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: .35em .75em .625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  max-width: 100%;
+  white-space: normal;
+  padding: 0;
+  display: table;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"], [type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template, [hidden] {
+  display: none;
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+ul[class], ol[class] {
+  padding: 0;
+}
+
+body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizespeed;
+  line-height: 1.5;
+}
+
+ul[class], ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+* {
+  font-size: 12px;
+}
+
+.wrapper-bagraund {
+  background: #0a142f;
+  position: relative;
+}
+
+.wrapper-bagraund__grid-imeg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.wrapper-bagraund__filter-topleft {
+  width: 222px;
+  height: 222px;
+  filter: blur(250px);
+  background: #7c3eff;
+  position: absolute;
+  left: -17px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.wrapper-bagraund__filter-topright {
+  width: 141px;
+  height: 141px;
+  z-index: 10;
+  filter: blur(250px);
+  background: #be229c;
+  position: absolute;
+  right: 0;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.wrapper-bagraund__filter-centerright {
+  width: 174px;
+  height: 174px;
+  filter: blur(250px);
+  background: #ffc93e;
+  position: absolute;
+  top: 200px;
+  right: 0;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.wrapper-bagraund__filter-centerleft {
+  width: 175px;
+  height: 175px;
+  filter: blur(250px);
+  background: #2286be;
+  position: absolute;
+  top: 80%;
+  left: -26px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-conteiner {
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.33333rem 1.25rem 0;
+  display: flex;
+}
+
+.main-header-navigation {
+  display: none;
+}
+
+.preview {
+  padding-top: 2.66667rem;
+}
+
+.preview__ornament-line {
+  position: absolute;
+}
+
+.preview__ornament-star-topright {
+  position: absolute;
+  top: -30px;
+  right: 20px;
+}
+
+.preview__ornament-star-center {
+  position: absolute;
+  top: 32%;
+  right: 31.4667%;
+}
+
+.preview__ornament-star-bootonright {
+  z-index: 2;
+  position: absolute;
+  top: 62%;
+  right: 4%;
+}
+
+.position-container {
+  position: relative;
+}
+
+.preview-content__tabls {
+  position: absolute;
+  top: 0;
+  left: -27px;
+}
+
+.preview-content__titles {
+  z-index: 2;
+  position: relative;
+}
+
+.preview-content__title {
+  color: #fff;
+  margin-left: 25%;
+  font-family: Inter;
+  font-size: 5.83333rem;
+  font-weight: 700;
+  line-height: 85px;
+}
+
+.preview-content__subtitle {
+  color: #fff;
+  font-family: Inter;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 85px;
+}
+
+.preview-content__content {
+  color: #fff;
+  text-align: start;
+  margin-top: 16px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.preview-content__button {
+  z-index: 2;
+  background: #ffc93e;
+  border: none;
+  border-radius: 30px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  padding: 16px 24px;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  display: flex;
+  position: relative;
+}
+
+.preview-content__button-arrows-img {
+  padding-left: 8px;
+}
+
+.preview-portrets-job {
+  padding-top: 40px;
+  position: relative;
+}
+
+.preview-portrets-job__img {
+  width: 100vw;
+}
+
+.preview-portrets-job__playvideo {
+  position: absolute;
+  bottom: -37.56px;
+  right: 12.23%;
+}
+
+.preview-portrets-comand {
+  margin-top: 65.56px;
+  position: relative;
+}
+
+.preview-portrets-comand__ornament {
+  position: absolute;
+  top: 13.04%;
+  left: 118px;
+}
+
+/*# sourceMappingURL=index.8ae33429.css.map */

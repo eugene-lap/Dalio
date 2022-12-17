@@ -1,0 +1,102 @@
+.bagraund {
+    
+    &__grid {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 210px;
+        height: 183px;
+        background: url(../../assets/items/grid-ornament.png);
+
+        @media screen and (min-width: 1000px) {
+            background: url(../../assets/items/grid-ornament-decst.png);
+            width: 490px;
+            height: 428px;
+            top: 0;
+        }
+    }
+
+    &__filter-topleft {
+        position: absolute;
+        width: 222px;
+        height: 222px;
+        left: -17px;
+
+        background: #7C3EFF;
+        filter: blur(250px);
+        transform: matrix(1, 0, 0, -1, 0, 0);
+
+        @media screen and (min-width: 1000px) {
+            background: #7C3EFF;
+            filter: blur(250px);
+            transform: matrix(1, 0, 0, -1, 0, 0);
+            top: 0;
+            left: 0;
+            width: 341px;
+            height: 341px;
+        }
+    }
+
+    &__filter-topright {
+        position: absolute;
+        width: 141px;
+        height: 141px;
+        right: 0;
+
+        background: #BE229C;
+        filter: blur(250px);
+        transform: matrix(1, 0, 0, -1, 0, 0);
+
+        @media screen and (min-width: 1000px) {
+            background: #BE229C;
+            filter: blur(250px);
+            transform: matrix(1, 0, 0, -1, 0, 0);
+            width: 300px;
+            height: 300px;
+            top: 0;
+            right: 0;
+        }
+    }
+
+    &__filter-centerright {
+        position: absolute;
+        width: 174px;
+        height: 174px;
+        right: 0;
+        top: 200px;
+        z-index: 5;
+
+        background: #FFC93E;
+        filter: blur(250px);
+        transform: matrix(1, 0, 0, -1, 0, 0);
+
+        @media screen and (min-width: 1000px) {
+            background: #FFC93E;
+            filter: blur(250px);
+            transform: matrix(1, 0, 0, -1, 0, 0);
+            width: 225px;
+            height: 225px;
+            right: 0;
+            top: 800px;
+        }
+    }
+
+    &__filter-centerleft {
+        @media screen and (min-width: 1000px) {
+            position: absolute;
+            background: #22B5BE;
+            filter: blur(250px);
+            transform: matrix(1, 0, 0, -1, 0, 0);
+            width: 242px;
+            height: 242px;
+            left: 0;
+            top: 800px;
+        }
+    }
+
+    &__ornament-centerright {
+        position: absolute;
+        right: -15px;
+        top: 80%;
+    }
+}

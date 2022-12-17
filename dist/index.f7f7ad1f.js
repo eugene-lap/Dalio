@@ -1,0 +1,2 @@
+const swiper=new Swiper(".swiper",{pagination:{el:".swiper-pagination",clickable:!0},spaceBetween:16,breakpoints:{1e3:{slidesPerView:2,spaceBetween:32,allowTouchMove:!1,pagination:{el:null}}}});new Swiper(".reviews-swapper",{pagination:{el:".swiper-pagination",clickable:!0},spaceBetween:16,allowTouchMove:!0,breakpoints:{1e3:{slidesPerView:1.5,spaceBetween:32,pagination:{el:null},navigation:{nextEl:".reviews-button-circle-start",prevEl:".reviews-button-circle-end"}}}});
+//# sourceMappingURL=index.f7f7ad1f.js.map

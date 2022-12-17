@@ -1,0 +1,56 @@
+.main-header-menu-toggle {
+	display: none;
+	position: relative;
+	z-index: 30;
+	width: 24px;
+	height: 24px;
+	background-color: inherit;
+	@media screen and (max-width: 1000px) {
+		display: inline-block;
+	}
+	// основной элемент меню, средняя полоска
+	&__item {
+		position: absolute;
+		background: #fff;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		top: 9px;
+		transition: all 0.3s ease 0s;
+		opacity: 0.6;
+	}
+	// нижняя и верхняя
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		background: #fff;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		transition: all 0.3s ease 0s;
+		opacity: 0.6;
+	}
+	// Раздвинаем, здесь вверх
+	&::before {
+		top: 0;
+	}
+	// Раздвинаем, здесь вниз
+	&::after {
+		bottom: 0;
+	}
+	// Поворачиваем на 45 градусов при клике
+	&.active::before {
+		transform: rotate(45deg);
+		top: 9px;
+	}
+	// Поворачиваем на 45 градусов при клике
+	&.active::after {
+		transform: rotate(-45deg);
+		bottom: 9px;
+	}
+	// Скрываем среднюю полоску при клике
+	&.active span {
+		transform: scale(0);
+	}
+}

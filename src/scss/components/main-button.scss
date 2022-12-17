@@ -1,0 +1,18 @@
+.main-button{
+    position: relative;
+    z-index: 2;
+    padding: 16px 24px;
+    background: #FFC93E;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    cursor: pointer;
+    gap: 8px;
+}

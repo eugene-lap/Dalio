@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*{
+    font-size: 12px;
+}
+
+h1{
+    @include font("Inter", 700, 5.83333333333rem, 7.08333333333rem, #ffffff);
+}
+
+h2{
+    @include font("Inter", 400, 1.5rem, 2.66666666667rem, $main-white);
+}
+
+h3{
+    @include font("Inter", 700, 4rem, 4.83333333333rem, #ffffff);
+}
+
+h4{
+    @include font("Inter", 700, 2rem, 2.41666666667rem, #ffffff);
+}
+
+h5{
+    @include font("Inter", 400, 1.66666666667rem, 2rem, $main-white);
+}
+p{
+    @include font("Inter", 400, 1.33333333333rem, 2.5rem, $main-white);
+}
+a{
+    cursor: pointer;
+}
+body{
+    background: $main-blue;
+}
+

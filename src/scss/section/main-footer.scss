@@ -1,0 +1,223 @@
+.main-footer {
+	background-color: $main-grey;
+	padding-top: 40px;
+	padding-bottom: 29px;
+}
+
+.main-footer-form {
+	background-color: $main-yellow;
+	padding: 23.622047244% 14.678899082%;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+	@media screen and (min-width: 1000px) {
+		border-radius: 30px;
+		padding: 80px 48px;
+		width: 100%;
+	}
+
+	&__label {
+		@include font("Inter", 600, 20px, 150%, #0A142F);
+		text-align: start;
+	}
+
+	&__input {
+		outline: none;
+		border: none;
+		border-bottom: 1px solid #F3F5F6;
+		background-color: $main-yellow;
+		margin-top: 15px;
+	}
+
+	&__input::placeholder {
+		color: #0A142F;
+	}
+
+}
+
+.main-footer-container-content {
+	display: grid;
+	gap: 16px;
+
+	@media screen and (min-width: 1000px) {
+		padding-left: 50px;
+	}
+
+	&__title {
+		@include font("Inter", 600, 18px, 18px, #FFFFFF);
+		text-align: center;
+
+		@media screen and (min-width: 1000px) {
+			display: flex;
+			align-items: flex-end;
+		}
+	}
+
+	&__subtitle {
+		@include font("Inter", 400, 16px, 30px, #E0E5F3);
+		text-align: center;
+		text-decoration: none;
+
+		@media screen and (min-width: 1000px) {
+			text-align: start;
+			padding: 0;
+		}
+	}
+
+	&__subtitle-decstoup {
+		display: none;
+
+		@media screen and (min-width: 1000px) {
+			@include font("Inter", 400, 16px, 19px, #E0E5F3);
+			display: block;
+			letter-spacing: -0.213333px;
+			text-align: center;
+		}
+	}
+}
+
+.main-footer-container-content-logotips {
+	display: flex;
+	justify-content: space-between;
+	width: 66.141732283%;
+	margin: 0 auto;
+
+	&__logo {
+		@media screen and (min-width: 1000px) {
+			width: 21px;
+			height: 21px;
+		}
+	}
+}
+
+.main-footer-container {
+	display: grid;
+	gap: 40px;
+	padding-top: 40px;
+
+	@media screen and (min-width: 1000px) {
+		grid-template-columns: 48.75% 1fr 1fr;
+		gap: 2.5%;
+	}
+}
+
+.main-footer-container-content--font {
+	line-height: 50px;
+
+	@media screen and (min-width: 1000px) {
+		display: none;
+	}
+
+}
+
+.footer-container {
+	@media screen and (min-width: 1000px) {
+		max-width: 1280px;
+	}
+}
+
+.main-footer-position-container {
+	margin-top: 18.5px;
+
+	@media screen and (min-width: 1000px) {
+		margin-top: 48px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+.main-footer-position-container-logotips {
+	display: flex;
+	justify-content: center;
+	gap: 7.3%;
+	margin-top: 32px;
+
+	@media screen and (min-width: 1000px) {
+		margin-top: 48px;
+		margin: 0;
+		order: 1;
+		justify-content: end;
+	}
+}
+
+.main-footer-container-content__information {
+	margin-top: 61.5px;
+	@include font("Inter", 400, 16px, 19px, #E0E5F3);
+	text-align: center;
+
+	@media screen and (min-width: 1000px) {
+		display: none;
+	}
+}
+
+.main-footer-container-content__information-decst {
+	display: none;
+
+	@media screen and (min-width: 1000px) {
+		display: inline;
+		@include font("Inter", 400, 16px, 19px, #E0E5F3);
+		letter-spacing: -0.213333px;
+	}
+}
+
+.main-footer-position-container-content {
+	@media screen and (min-width: 1000px) {
+		order: 1;
+	}
+}
+
+.main-footer-form__input-email {
+	background: url(../../assets/items/submit-form.svg) no-repeat;
+	height: 16px;
+	width: 16px;
+	border: none;
+	position: absolute;
+	cursor: pointer;
+	bottom: 37%;
+	right: 14.692653673%;
+
+	@media screen and (min-width: 418px) and (max-width: 540px) {
+		bottom: 36%;
+		right: 14.692653673%;
+	}
+
+	@media screen and (min-width: 0px) and (max-width: 417px) {
+		bottom: 29%;
+		right: 14.692653673%;
+	}
+
+	@media screen and (min-width: 600px) {
+		top: 52%;
+		right: 14.692653673%;
+	}
+
+	@media screen and (min-width: 600px) and (max-width:845px) {
+		top: 58%;
+		right: 14.692653673%;
+	}
+
+	@media screen and (min-width: 1000px) {
+		top: 120;
+		right: 48;
+	}
+
+	@media screen and (min-width: 1000px) and (max-width: 1162.80px) {
+		top: 150;
+		right: 48;
+	}
+
+	@media screen and (min-width: 1000px) and (max-width: 1162.80px) {
+		top: 150;
+		right: 48;
+	}
+
+}
+
+.main-footer-container-content:nth-child(3) {
+	@media screen and (min-width: 1000px) {
+		display: grid;
+		grid-template-rows: 84px 30px 30px;
+	}
+}

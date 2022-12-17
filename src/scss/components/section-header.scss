@@ -1,0 +1,32 @@
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: 1000px) {
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    @media screen and (min-width: 600px) and (max-width: 1000px) {
+        margin: 0 auto;
+    }
+
+    &__title {
+        @include font("Inter", 700, 24px, 29px, #ffffff);
+
+        @media screen and (min-width: 1000px) {
+            @include font("Inter", 700, 48px, 58px, #ffffff);
+        }
+    }
+
+    &__link {
+        @include font("Inter", 400, 16px, 19px, #FFC93E);
+
+
+        @media screen and (min-width: 1000px) {
+            @include font("Inter", 500, 25px, 16px, #ffffff);
+            text-align: center;
+        }
+    }
+}
